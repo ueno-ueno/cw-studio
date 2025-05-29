@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cw-studio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="header__wrapper">
+        <h1 class="header__logoArea">
+          <a href="" class="header__logoLink">
+            <img class="header__logo" src="img/logo.png" alt="CWstudioロゴ" />
+          </a>
+        </h1>
+
+        <div class="header__btnWrapper">
+          <div class="c-btn--s c-btn--white">
+            <a href="">ログイン</a>
+          </div>
+
+          <div class="c-btn--s c-btn--orange">
+            <a href="">新規登録</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="section fv">
+        <div class="c-wrapper">
+          <div class="fv__wrapper">
+            <!-- left -->
+            <div class="fv__left">
+              <h2 class="fv__caption">
+                <span class="fv__caption--small"
+                  >月500円で使える小説執筆ツール</span
+                >
+                <div class="fv__caption--big">
+                  小説の執筆を<br class="c-br" />圧倒的に効率化
+                </div>
+              </h2>
+
+              <ul class="fv__list">
+                <li class="fv__item">本編の執筆</li>
+                <li class="fv__item">物語の設定</li>
+                <li class="fv__item">プロット作成</li>
+                <li class="fv__item">人物設定</li>
+                <li class="fv__item">時系列整理</li>
+                <li class="fv__item">用語集設定</li>
+                <li class="fv__item">バージョン管理</li>
+                <li class="fv__item">不必要な機能は非表示</li>
+                <li class="fv__item">その他便利な機能</li>
+              </ul>
+            </div>
+
+            <!-- right -->
+            <div class="fv__formArea">
+              <div class="fv__formTopText">\ 無料登録 /</div>
+              <div class="fv__form">
+                <form action="">
+                  <div class="fv__formItem">
+                    <label for="">メールアドレス</label>
+                    <input
+                      type="text"
+                      class="fv__textArea"
+                      autocomplete="email"
+                      required
+                    />
+                  </div>
+
+                  <div class="fv__formItem">
+                    <label for="password">パスワード</label>
+                    <input
+                      type="text"
+                      class="fv__textArea"
+                      autocomplete="current-password"
+                      required
+                    />
+                  </div>
+                </form>
+
+                <div class="fv__checkBox fv__formItem">
+                  <input type="checkbox" id="checkbox" value="checked" />
+                  <label for="checkbox"
+                    ><span class="c-text--blue">利用規約</span>に同意する</label
+                  >
+                </div>
+                <a class="c-registerBtn--black" href=""> 登録する </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section video c-wrapper--s">
+        <h2 class="c-sectionTitle">動画でわかるCWstudio</h2>
+
+        <iframe
+          class="video__area"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/qVwsXaYYbrg"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <section class="section featuer">
+        <div class="c-wrapper">
+          <h2 class="c-sectionTitle">9つの機能・特徴</h2>
+
+          <ul class="featuer__list featuer__listFlex">
+            <li class="feature__item">
+              <div class="feature__textBox">
+                <span class="feature__num">POINT 01</span>
+                <h3 class="feature__title">本編の執筆</h3>
+                <p class="feature__caption">
+                  本編の執筆ができます。フルスクリーンモードで執筆に集中することが出来ます。
+                </p>
+              </div>
+
+              <div class="feature__imgBox">
+                <img
+                  src="img/top-function-item-img.jpg"
+                  alt="小説執筆画面のスクリーンショット"
+                />
+              </div>
+            </li>
+
+            <li class="feature__item">
+              <div class="feature__textBox">
+                <span class="feature__num">POINT 01</span>
+                <h3 class="feature__title">本編の執筆</h3>
+                <p class="feature__caption">
+                  本編の執筆ができます。フルスクリーンモードで執筆に集中することが出来ます。
+                </p>
+              </div>
+
+              <div class="feature__imgBox">
+                <img
+                  src="img/top-function-item-img.jpg"
+                  alt="小説執筆画面のスクリーンショット"
+                />
+              </div>
+            </li>
+
+            <li class="feature__item">
+              <div class="feature__textBox">
+                <span class="feature__num">POINT 01</span>
+                <h3 class="feature__title">本編の執筆</h3>
+                <p class="feature__caption">
+                  本編の執筆ができます。フルスクリーンモードで執筆に集中することが出来ます。
+                </p>
+              </div>
+
+              <div class="feature__imgBox">
+                <img
+                  src="img/top-function-item-img.jpg"
+                  alt="小説執筆画面のスクリーンショット"
+                />
+              </div>
+            </li>
+
+            <li class="feature__item">
+              <div class="feature__textBox">
+                <span class="feature__num">POINT 01</span>
+                <h3 class="feature__title">本編の執筆</h3>
+                <p class="feature__caption">
+                  本編の執筆ができます。フルスクリーンモードで執筆に集中することが出来ます。
+                </p>
+              </div>
+
+              <div class="feature__imgBox">
+                <img
+                  src="img/top-function-item-img.jpg"
+                  alt="小説執筆画面のスクリーンショット"
+                />
+              </div>
+            </li>
+
+            <li class="feature__item">
+              <div class="feature__textBox">
+                <span class="feature__num">POINT 01</span>
+                <h3 class="feature__title">本編の執筆</h3>
+                <p class="feature__caption">
+                  本編の執筆ができます。フルスクリーンモードで執筆に集中することが出来ます。
+                </p>
+              </div>
+
+              <div class="feature__imgBox">
+                <img
+                  src="img/top-function-item-img.jpg"
+                  alt="小説執筆画面のスクリーンショット"
+                />
+              </div>
+            </li>
+
+            <li class="feature__otherWrapper">
+              <h3 class="feature__title">そのほかの便利な機能</h3>
+              <ul class="feature__other--list">
+                <li class="featre__othrer--item">
+                  <img
+                    class="featre__othrer--img"
+                    src="img/feature/icon.png"
+                    alt="ダークモード機能アイコン"
+                  />
+                  <p class="feature__other--text">
+                    長時間の執筆のために
+                    <br class="c-br--none" />ダークモード掲載
+                  </p>
+                </li>
+
+                <li class="featre__othrer--item">
+                  <img
+                    class="featre__othrer--img"
+                    src="img/feature/icon-02.png"
+                    alt="縦書きプレビュー機能アイコン"
+                  />
+                  <p class="feature__other--text">縦書きプレビュー可能</p>
+                </li>
+
+                <li class="featre__othrer--item">
+                  <img
+                    class="featre__othrer--img"
+                    src="img/feature/icon03.png"
+                    alt="並び替え機能アイコン"
+                  />
+                  <p class="feature__other--text">
+                    各項目は自由に <br class="feature__br" />並び替えが変更可能
+                  </p>
+                </li>
+
+                <li class="featre__othrer--item">
+                  <img
+                    class="featre__othrer--img"
+                    src="img/feature/icon04.png"
+                    alt="スマホ対応機能アイコン"
+                  />
+                  <p class="feature__other--text">スマホでも執筆可能</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- cvArea -->
+      <section class="cvArea">
+        <h2 class="cvArea__title">
+          今なら30日全機能無料で<br class="c-br" />使用できます！
+        </h2>
+        <p class="cvArea__caption">月500円で使える小説執筆ツール</p>
+
+        <a href="" class="c-btn--l c-btn--orange">試しに無料で使ってみる</a>
+      </section>
+
+      <!-- price -->
+      <section class="section price">
+        <div class="c-wrapper--s">
+          <h2 class="c-sectionTitle">プラン・料金</h2>
+
+          <ul class="price__list">
+            <li class="price__item">
+              <h3 class="price__title">無料プラン</h3>
+              <span class="price__text">月額使用料</span>
+              <span class="price__price">0円</span>
+              <h4 class="price__feature">主な機能</h4>
+              <ul class="price__featureList">
+                <li class="price__featureItem price__featureItem--gray">作成できる小説の数は1つ</li>
+                <li class="price__featureItem price__featureItem--gray">作成できる小説の数は1つ</li>
+              </ul>
+            </li>
+
+            <li class="price__item price__item--orange">
+              <h3 class="price__title price__title--orange">有料プラン</h3>
+              <span class="price__text price__text--orange">月額使用料</span>
+              <span class="price__price price__price--orange">500円</span>
+              <h4 class="price__feature price__feature--orange">主な機能</h4>
+              <ul class="price__featureList price__featureList--orange">
+                <li class="price__featureItem">作成できる小説の数は無制限</li>
+                <li class="price__featureItem">本編の執筆</li>
+                <li class="price__featureItem">物語の設定</li>
+                <li class="price__featureItem">プロット</li>
+                <li class="price__featureItem">人物</li>
+                <li class="price__featureItem">時系列</li>
+                <li class="price__featureItem">その他全ての機能</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- faq -->
+      <section class="section faq">
+        <h2 class="c-sectionTitle">よくあるご質問</h2>
+
+        <dl class="faq__wrapper c-wrapper--s">
+          <div class="faq__list">
+            <dt class="faq__q">
+              <span class="faq__icon faq__icon--q">Q</span>
+              支払い手段を教えてください
+            </dt>
+            <dd class="faq__a">
+              <span class="faq__icon faq__icon--a">A</span>
+              支払いはクレジットカード払いのみになります。対応カードは下記になります。
+              VISA / Master Card / JCB / American Express / Discover / Diners
+            </dd>
+          </div>
+
+          <div class="faq__list">
+            <dt class="faq__q">
+              <span class="faq__icon faq__icon--q">Q</span>
+              有料プランから無料プランに変更したらデータは消えてしまいますか？
+            </dt>
+            <dd class="faq__a">
+              <span class="faq__icon faq__icon--a">A</span>
+              無料プランは作成できる小説の数は1つとなります。有料プランで2つ以上作成している
+              場合は、プラン変更時に残す小説を1つ選択することになります。それ以外は消えてしま
+              うので、変更前にバックアップでデータをご自身のPCに保存しておくことをおすすめします。
+            </dd>
+          </div>
+
+          <div class="faq__list">
+            <dt class="faq__q">
+              <span class="faq__icon faq__icon--q">Q</span>
+              操作は難しくないですか？
+            </dt>
+            <dd class="faq__a">
+              <span class="faq__icon faq__icon--a">A</span>
+              <div class="faq__textWrapper">
+                直感的に操作できるようになっています。<a
+                  href=""
+                  class="c-text--blue"
+                  >使い方ガイド</a
+                >もあるので、安心して使っていただけると思います。
+              </div>
+            </dd>
+          </div>
+
+          <div class="faq__list">
+            <dt class="faq__q">
+              <span class="faq__icon faq__icon--q">Q</span>
+              領収書は発行できますか？
+            </dt>
+            <dd class="faq__a">
+              <span class="faq__icon faq__icon--a">A</span>
+              管理画面からpdfで発行が可能です。
+            </dd>
+          </div>
+
+          <div class="faq__list">
+            <dt class="faq__q">
+              <span class="faq__icon faq__icon--q">Q</span>
+              見た目を確認できますか？
+            </dt>
+            <dd class="faq__a">
+              <span class="faq__icon faq__icon--a">A</span>
+              <div class="faq__textWrapper">
+                デモページをご用意しているので、<a href="" class="c-text--blue"
+                  >こちら</a
+                >
+                からご覧ください。本編の執筆は無料プランでも可能なので、まずは無料プランで使っていただく事もできます。
+              </div>
+            </dd>
+          </div>
+
+          <div class="faq__list">
+            <dt class="faq__q">
+              <span class="faq__icon faq__icon--q">Q</span>
+              動作環境を教えてください。
+            </dt>
+            <dd class="faq__a">
+              <span class="faq__icon faq__icon--a">A</span>
+              下記の環境でお使いいただけます。 PC：Google Chrome / Safari /
+              FireFox / Edge / 各最新版 スマートフォン：iOS Safari / Android
+              Chrome / 各最新版
+            </dd>
+          </div>
+        </dl>
+      </section>
+
+      <!-- cvArea -->
+      <section class="cvArea">
+        <h2 class="cvArea__title">
+          今なら30日全機能無料で<br class="c-br" />使用できます！
+        </h2>
+        <p class="cvArea__caption">月500円で使える小説執筆ツール</p>
+
+        <a href="" class="c-btn--l c-btn--orange">試しに無料で使ってみる</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a href="">
+        <img class="footer__img" src="img/logo.png" alt="CWstudioロゴ" />
+      </a>
+
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="">会社概要</a>
+        </li>
+
+        <li class="footer__item">
+          <a href="">利用規約</a>
+        </li>
+
+        <li class="footer__item">
+          <a href="">プライバシーポリシー</a>
+        </li>
+
+        <li class="footer__item">
+          <a href="">お問い合わせ</a>
+        </li>
+      </ul>
+
+      <p class="footer__copyright">&copy;2021 CWstudio</p>
+    </footer>
+  </body>
+</html>

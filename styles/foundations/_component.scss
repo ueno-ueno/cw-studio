@@ -1,0 +1,94 @@
+@use "variables" as var;
+@use "setting" as set;
+
+.c-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+.c-wrapper--s {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+.c-btn--s {
+  width: 120px;
+  height: 42px;
+  border-radius: 50px;
+  font-weight: bold;
+  @include set.mediaQuery(tab) {
+    width: 85px;
+    height: 34px;
+  }
+
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include set.mediaQuery(tab) {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.c-btn--white {
+  border: 2px solid var.$border-primary;
+  color: var.$font-primary;
+}
+.c-btn--orange {
+  border: 2px solid var.$border-black;
+  color: var.$font-black;
+  background-color: var.$bg-accent;
+}
+.c-registerBtn--black {
+  width: 100%;
+  background-color: var.$bg-black;
+  color: var.$font-white;
+  height: 45px;
+  border-radius: 50px;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-btn--l {
+  width: 300px;
+  height: 68px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.c-text--blue {
+  color: var.$font-link;
+}
+
+.c-sectionTitle {
+  font-weight: bold;
+  color: var.$font-primary;
+  text-align: center;
+  font-size: clamp(2.2rem, 1.836rem + 1.82vw, 3.2rem);
+  margin-bottom: 40px;
+}
+
+.c-br {
+  display: none;
+  @include set.mediaQuery(tab) {
+    display: block;
+  }
+}
+
+.c-br--none {
+  @include set.mediaQuery(tab) {
+    display: none;
+  }
+}

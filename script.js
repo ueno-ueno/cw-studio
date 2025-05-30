@@ -20,6 +20,28 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     observer.observe(fad);
   });
+
+  // トップに戻るボタン
+  const totop = document.querySelector('.totop');
+  const totopBtn = document.querySelector('.totop__btn');
+
+  // スクロールイベント
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      totop.classList.add('is-show');
+    } else {
+      totop.classList.remove('is-show');
+    }
   });
+
+  // クリックイベント
+  // totopBtn.addEventListener('click', (e) => {
+  //   e.preventDefault();
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: 'smooth'
+  //   });
+  // });
+});
   
 

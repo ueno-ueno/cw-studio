@@ -34,14 +34,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // クリックイベント
-  // totopBtn.addEventListener('click', (e) => {
-  //   e.preventDefault();
-  //   window.scrollTo({
-  //     top: 0,
-  //     behavior: 'smooth'
-  //   });
-  // });
+  クリックイベント
+  totopBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
 });
   
 

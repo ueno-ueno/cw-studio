@@ -69,6 +69,14 @@
   justify-content: center;
   font-weight: bold;
   font-size: 1.8rem;
+  position: relative;
+  transition: all 0.2s ease;
+  box-shadow: 0 6px 0 #333333;
+  transform: translateY(0);
+}
+.c-btn--l:hover {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #333333;
 }
 
 .c-text--blue {
@@ -96,6 +104,71 @@
   .c-br--none {
     display: none;
   }
+}
+
+.company {
+  padding: 96px 0;
+  background-color: #E8DBC8;
+}
+@media screen and (max-width: 720px) {
+  .company {
+    padding: 40px 0;
+  }
+}
+.company__inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.company__title {
+  font-size: clamp(2.4rem, 2.182rem + 1.09vw, 3rem);
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 48px;
+  color: #c7a26c;
+}
+@media screen and (max-width: 720px) {
+  .company__title {
+    margin-bottom: 32px;
+  }
+}
+.company__content {
+  background-color: #fff;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 720px) {
+  .company__content {
+    padding: 24px 16px;
+  }
+}
+.company__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.company__table th, .company__table td {
+  padding: 16px;
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+}
+@media screen and (max-width: 720px) {
+  .company__table th, .company__table td {
+    padding: 12px 8px;
+    font-size: 1.4rem;
+  }
+}
+.company__table th {
+  width: 30%;
+  font-weight: bold;
+  background-color: #E8DBC8;
+}
+.company__table td ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+.company__table tr:last-child th, .company__table tr:last-child td {
+  border-bottom: none;
 }
 
 html {
@@ -559,6 +632,26 @@ a:hover {
   }
 }
 
+.footer__item {
+  position: relative;
+  padding: 0 10px;
+}
+.footer__item:not(:last-child)::after {
+  content: "/";
+  position: absolute;
+  right: -5px;
+}
+@media screen and (max-width: 720px) {
+  .footer__item:not(:last-child)::after {
+    display: none;
+  }
+}
+
 .footer__item:not(:last-child) {
-  margin-bottom: 10px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 720px) {
+  .footer__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */

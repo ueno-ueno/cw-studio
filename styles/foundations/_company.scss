@@ -1,0 +1,75 @@
+@use "variables" as var;
+@use "setting" as set;
+
+.company {
+  padding: 96px 0;
+  background-color: var.$bg-primary-light;
+
+  @include set.mediaQuery(tab) {
+    padding: 40px 0;
+  }
+
+  &__inner {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+
+  &__title {
+    font-size: clamp(2.4rem, 2.182rem + 1.09vw, 3rem);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 48px;
+    color: var.$font-primary;
+
+    @include set.mediaQuery(tab) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__content {
+    background-color: #fff;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    @include set.mediaQuery(tab) {
+      padding: 24px 16px;
+    }
+  }
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th, td {
+      padding: 16px;
+      border-bottom: 1px solid var.$border-gray;
+      text-align: left;
+
+      @include set.mediaQuery(tab) {
+        padding: 12px 8px;
+        font-size: 1.4rem;
+      }
+    }
+
+    th {
+      width: 30%;
+      font-weight: bold;
+      background-color: var.$bg-primary-light;
+    }
+
+    td {
+      ul {
+        list-style: disc;
+        padding-left: 20px;
+      }
+    }
+
+    tr:last-child {
+      th, td {
+        border-bottom: none;
+      }
+    }
+  }
+} 

@@ -1,6 +1,7 @@
 @use "foundations/variables" as var;
 @use "foundations/component";
 @use "foundations/setting" as set;
+@use "foundations/company";
 
 html {
   font-size: 62.5%;
@@ -432,6 +433,24 @@ a {
     font-size: 1.4rem;
   }
 }
+
+.footer__item {
+  position: relative;
+  padding: 0 10px;
+
+  &:not(:last-child)::after {
+    content: "/";
+    position: absolute;
+    right: -5px;
+     @include set.mediaQuery(tab) {
+      display: none;
+     }
+  }
+}
+
 .footer__item:not(:last-child) {
-  margin-bottom: 10px;
+  margin-right: 10px;
+   @include set.mediaQuery(tab) {
+    margin-bottom: 10px;
+   }
 }

@@ -66,6 +66,15 @@
   justify-content: center;
   font-weight: bold;
   font-size: 1.8rem;
+  position: relative;
+  transition: all 0.2s ease;
+  box-shadow: 0 6px 0 var.$border-black;
+  transform: translateY(0);
+
+  &:hover {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 var.$border-black;
+  }
 }
 
 .c-text--blue {
@@ -92,3 +101,4 @@
     display: none;
   }
 }
+

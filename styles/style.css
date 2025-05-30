@@ -128,6 +128,18 @@ a:hover {
   }
 }
 
+.fade {
+  transition: 2s ease;
+  transform: translateY(40px);
+  opacity: 0;
+}
+
+.fade.active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 2s ease;
+}
+
 .header__wrapper {
   height: 80px;
   background-color: #fff;
@@ -138,6 +150,7 @@ a:hover {
   position: fixed;
   width: 100%;
   padding: 0 16px;
+  z-index: 100;
 }
 
 .header__logo {

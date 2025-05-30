@@ -8,4 +8,18 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const fade = document.querySelectorAll(".fade");
-});
+  fade.forEach(fad => {
+    const observer = new IntersectionObserver((entries, observer) => {
+      
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('active')
+          observer.unobserve(entry.target)
+        }
+      })
+    })
+    observer.observe(fad);
+  });
+  });
+  
+

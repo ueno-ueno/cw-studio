@@ -24,19 +24,23 @@ a {
     opacity: 0.7;
   }
 }
+
 .section {
   padding: 96px 0;
+
   @include set.mediaQuery(tab) {
     padding-top: 40px;
     padding-bottom: 40px;
   }
 }
-.fade{
+
+.fade {
   transition: 2s ease;
   transform: translateY(40px);
   opacity: 0;
 }
-.fade.active{
+
+.fade.active {
   opacity: 1;
   transform: translateY(0);
   transition: 2s ease;
@@ -76,6 +80,7 @@ a {
   background-size: cover;
   padding: 56px 140px;
   border-bottom: 2px solid var.$border-primary;
+
   @include set.mediaQuery(tab) {
     padding: 40px 4%;
   }
@@ -83,6 +88,7 @@ a {
 
 .fv__br {
   display: none;
+
   @include set.mediaQuery(tab) {
     display: block;
   }
@@ -92,6 +98,7 @@ a {
   display: flex;
   align-items: center;
   gap: 110px;
+
   @include set.mediaQuery(pc) {
     flex-direction: column;
     justify-content: center;
@@ -111,6 +118,7 @@ a {
   font-weight: bold;
   margin-bottom: 8px;
 }
+
 .fv__caption--big {
   font-weight: bold;
   font-size: clamp(3rem, 2.709rem + 1.45vw, 3.8rem);
@@ -121,6 +129,7 @@ a {
 .fv__list {
   width: 100%;
 }
+
 .fv__item {
   background-color: var.$font-primary;
   display: inline-block;
@@ -145,6 +154,7 @@ a {
   background-color: #fff;
   padding: 32px 40px;
   border-radius: 16px;
+
   @include set.mediaQuery(pc) {
     padding: 16px;
     width: 100%;
@@ -183,6 +193,7 @@ a {
   gap: 10%;
   padding: 40px 0;
   border-top: 1px solid var.$border-gray;
+
   @include set.mediaQuery(tab) {
     flex-direction: column;
   }
@@ -190,6 +201,7 @@ a {
 
 .feature__textBox {
   width: 40%;
+
   @include set.mediaQuery(tab) {
     width: 100%;
   }
@@ -210,13 +222,16 @@ a {
 
 .feature__imgBox {
   width: 55%;
+
   @include set.mediaQuery(tab) {
     width: 100%;
   }
 }
+
 .featre__othrer--img {
   width: 44px;
 }
+
 .feature__otherWrapper {
   border-bottom: 1px solid var.$border-gray;
   border-top: 1px solid var.$border-gray;
@@ -227,6 +242,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-around;
+
   @include set.mediaQuery(tab) {
     flex-direction: column;
     align-items: start;
@@ -258,6 +274,7 @@ a {
   font-size: clamp(2rem, 1.564rem + 2.18vw, 3.2rem);
   color: #fff;
   margin-bottom: 16px;
+
   @include set.mediaQuery(tab) {
     text-align: center;
   }
@@ -273,6 +290,7 @@ a {
 .price__list {
   display: flex;
   gap: 40px;
+
   @include set.mediaQuery(tab) {
     flex-direction: column;
   }
@@ -286,6 +304,7 @@ a {
   flex-direction: column;
   align-items: center;
   padding: 32px 0;
+
   @include set.mediaQuery(tab) {
     width: 100%;
   }
@@ -328,9 +347,11 @@ a {
   font-weight: bold;
   position: relative;
   margin-bottom: 40px;
+
   @include set.mediaQuery(tab) {
     font-size: 1.4rem;
   }
+
   &::after {
     display: inline-block;
     content: "";
@@ -352,6 +373,7 @@ a {
 .price__featureItem {
   position: relative;
   padding-left: 16px;
+
   &::before {
     content: "✓";
     position: absolute;
@@ -359,12 +381,13 @@ a {
     color: var.$font-primary;
     font-weight: bold;
   }
+
   &:not(:last-child) {
     margin-bottom: 8px;
   }
 }
 
-.price__featureItem--gray{
+.price__featureItem--gray {
   &::before {
     content: "✓";
     color: var.$font-base;
@@ -376,20 +399,24 @@ a {
 .faq {
   background-color: var.$bg-rgba;
 }
-.faq__wrapper {
-}
+
+.faq__wrapper {}
+
 .faq__list {
   margin-bottom: 24px;
 }
+
 .faq__q {
   margin-bottom: 12px;
   display: flex;
   align-items: flex-start;
 }
+
 .faq__a {
   display: flex;
   align-items: flex-start;
 }
+
 .faq__icon {
   display: flex;
   align-items: center;
@@ -428,6 +455,7 @@ a {
   align-items: center;
   justify-content: center;
   margin-bottom: 16px;
+
   @include set.mediaQuery(tab) {
     flex-direction: column;
     font-size: 1.4rem;
@@ -442,15 +470,17 @@ a {
     content: "/";
     position: absolute;
     right: -5px;
-     @include set.mediaQuery(tab) {
+
+    @include set.mediaQuery(tab) {
       display: none;
-     }
+    }
   }
 }
 
 .footer__item:not(:last-child) {
   margin-right: 10px;
-   @include set.mediaQuery(tab) {
+
+  @include set.mediaQuery(tab) {
     margin-bottom: 10px;
-   }
+  }
 }

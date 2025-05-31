@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  クリックイベント
+  // クリックイベント
   totopBtn.addEventListener('click', (e) => {
     e.preventDefault();
     window.scrollTo({
